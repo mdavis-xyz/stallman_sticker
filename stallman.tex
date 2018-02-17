@@ -1,0 +1,37 @@
+\documentclass[tikz, border=0pt]{standalone}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+%\usepackage{xcolor}
+\usepackage{graphicx} 
+\usepackage{pgffor}
+\usepackage{pgfplots}
+\usepackage{calc}
+\usepackage[american, nofetsolderdot]{circuitikz}
+\usepackage{ifthen}
+\usepackage{units}
+
+\usepackage[skins]{tcolorbox}
+%\usepackage{transparent}
+\usepackage[quiet]{fontspec}
+
+\newfontfamily\bodyfont{Roboto-Regular} 
+
+
+\begin{document}
+
+% the face is from here: https://www.iconspng.com/image/113381/stallman
+% the background is from here: https://unsplash.com/photos/2oi3JDGB8Vo
+
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \xdef\stickerHeight{6.8}
+  \xdef\stickerLen{11.4}
+  \draw[draw,fill overzoom image={orange.jpg},fill image opacity=0.6] (0,0) rectangle (\stickerLen,\stickerHeight);
+  \node (face) at (2.4,\stickerHeight/2) {\includegraphics[height=4.5cm]{casifish.pdf}};
+  \node[align=left,text=black] at (7.8,0.5*\stickerHeight) {\bodyfont \fontsize{1.5cm}{1}\selectfont  Stallman \\[0.2in] \bodyfont \fontsize{1.5cm}{1}\selectfont was right};
+%  \node (gnu) at (\stickerLen-1.1,\stickerHeight/2) {\includegraphics[height=1.4in]{images/copyleft.pdf}}; 
+\end{tikzpicture}
+
+
+\end{document}

@@ -1,0 +1,495 @@
+% !TEX root = resume.tex
+% !TEX program = xelatex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+\documentclass[a4paper]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+ 
+\usepackage{etoolbox}
+%\usepackage[none]{hyphenat}
+\usepackage[english]{babel}
+\usepackage{verbatim}
+\usepackage{microtype} %better line breaks
+\newcommand\email[1]{\href{mailto:#1}{#1}}
+\usepackage{units}
+\usepackage{lastpage}
+\usepackage{wasysym}
+\usepackage{marvosym}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+   \providecommand{\faLinkedinSign}{\faLinkedinSquare}
+\usepackage{mdwlist}
+\usepackage{multicol}            % Required for the two-column references
+
+\newcommand\shortdot[1]{
+\vspace{-\parsep}
+\vspace{-1em}
+\begin{itemize*}
+#1
+\end{itemize*} 
+}
+
+%\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+
+
+
+\header{Matthew Davis}{Electrical Engineering Cadet}{
+\href{mailto:matthew@mdavis.xyz}{\faLaptop{}~~matthew@mdavis.xyz}
+~~|~~
+\faMobilePhone{} 0415 762 868
+~~|~~
+\href{https://www.linkedin.com/in/engineerdavis}{\faLinkedinSign{} /engineerdavis}  \\
+\faHome{} 18 Addison Avenue, Roseville NSW, Australia, 2069
+}
+
+\section{Career Summary}
+
+% \vspace{1em}
+\begin{itemize*}
+   \item Final year engineering student with High Distinction average, and three times Dean’s Award winner.
+   % \item Four years in a leadership position as Vice President of the UNSW electrical engineering society.
+   \item Two years work experience in engineering at Ausgrid.
+   \item 4 years of leadership experience gained through various executive roles in the UNSW electrical engineering society, including current position as Vice President
+%   \item Regularly gives presentations, chairs meetings and writes reports for both work and community roles.
+\end{itemize*}
+%\vspace{1em}
+
+\section{Industry Work Experience}
+
+
+
+%------------------------------------------------
+
+\entry
+{Feb 2012 -- Present}
+{Engineering Cadet}
+{Ausgrid}
+{
+Two years of full time graduate level work:
+
+\begin{itemize*}
+   \item Designed and built a high voltage impulse testing unit to IEC 60060-1
+   \item Diagnosed and repaired multiple faults in an undocumented, custom, \unit[100]{kA} current measurement system
+   \item Calculated measurement uncertainty for aforementioned system for audit purposes
+   \item Conducted world-first data analysis on the \unit[20]{GB} Smart Grid Smart City results, to determine which household appliances are most effectively targeted by demand side management
+   \item Analysed leak rate data for oil filled cables to evaluate the cost effectiveness of new leak detection techniques
+   \item Liaised with Accredited Service Providers and other external organisations seeking approval to work on the network
+   \item Investigated failures of \unit[33]{kV} links and recommended preventative modifications based on the conclusions
+   \item Wrote technical guidelines for network augmentations to correct high impedances in the low voltage network
+%   \item Read and interpreted Australian and international standards
+%   \item Diagnosed and repaired faults in electrical relays
+%   \item Predicted network loads
+%   \item Read and amended distribution network diagrams
+\end{itemize*}
+
+}
+
+%------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+%\newpage{}
+\section{Awards}
+
+
+
+%------------------------------------------------
+
+\entry
+{2014, 2013, 2012}
+{Engineering Dean's Award}
+{}
+{\shortdot{\item Awarded to the top two percent of undergraduate students across the faculty}}
+
+%------------------------------------------------
+
+
+\entry
+{2012}
+{Computer Science \& Engineering Performance Award}
+{}
+{\shortdot{\item Awarded to the top ten students who undertook first year computing courses}}
+
+%------------------------------------------------
+
+
+
+\entry
+{2011}
+{Premier's Award for All-round Excellence}
+{}
+{\shortdot{\item For high performance in the NSW Higher School Certificate}}
+
+%------------------------------------------------
+
+
+\entry
+{2011}
+{Gold Duke of Edinburgh's Award}
+{}
+{\shortdot{\item For well-roundedness}}
+
+
+
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+\section{Education} %qualifications? APESMA says education
+
+
+
+%------------------------------------------------
+
+\entry
+{Feb 2012 -- Present}
+{Bachelor of Electrical Engineering (Honours)}
+{University of New South Wales}
+{%Thesis topic on ?
+\shortdot{
+   \item High Distinction average (91\%).
+   \item Specialisations include: Grid Operation \& Control, Operating Systems, Codes \& Ciphers, Microelectronics
+}
+}
+
+%------------------------------------------------
+
+
+
+\entry
+{2012}
+{Associate in Music, Australia {\normalfont (AMusA)}}
+{Australian Music Examinations Board}
+{\shortdot{
+   \item For flute performance}
+}
+
+%------------------------------------------------
+
+\entry
+{2011}
+{Higher School Certificate}
+{Barker College}
+{
+\shortdot{
+   \item ATAR of 99.45
+}
+%Subjects include: 4 Unit Extension Maths, Physics, Chemistry, Advanced English and Music Extension
+%
+%Extensive extra-curricular involvement, including Band, Orchestra, Choir, Army Cadets, Duke of Edinburgh, Science Extension, Tae Kwon Do, Basketball, Rugby
+}
+
+
+
+
+\newpage{}
+
+\section{Community Roles}
+
+
+
+
+\entry
+{Feb 2012 -- Present}
+{Vice-President (2016, 2014), Publicity Officer (2013), Committee Member (2012)}
+{UNSW Electrical Engineering Student Society (ELSOC)}
+{\vspace{-1em}\vspace{-\parsep}
+\begin{itemize*}
+   \item Organised the first ever camp for UNSW electrical engineers, with 73 attendees, a budget of \$15,000 and a 100\% satisfaction rate
+   \item Organised dozens of social events, with up to 200 attendees
+   \item Liaised with industry sponsors, and university staff
+   \item Conducted advocacy and facilitated feedback from a body of 700 students to the faculty
+%   \item Achieved a profit
+   \item Managed the team of 17 executives
+   \item Delivered a profit of \$4,000 after paying expenses totalling \$22,000, for an organisation with free membership and mostly free events
+\end{itemize*}
+}
+
+
+
+\entry
+{Feb -- Dec, 2013}
+{Student Organisation Delegate}
+{UNSW Engineering Student Society (ENGSOC)}
+{
+\shortdot{
+   \item Organised a catered touch football tournament for 500 attendees
+   \item Planned a black tie ball for 200 attendees, with a budget of \$15,000
+}
+}
+
+%------------------------------------------------
+
+
+%\entry
+%{2013--Present}
+%{Assistant Area Coordinator}
+%{Sydney Mardi Gras}
+%{
+%Managed a team of 70 staff, who marshalled 12000 entrants and controlled 100,000 attendees.
+%}
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Technical SKILLS SECTION
+%----------------------------------------------------------------------------------------
+%\newpage{}
+\section{Technical Skills}
+
+
+
+%------------------------------------------------
+
+
+
+\entry
+{}
+{Software}
+{}
+{
+\shortdot{
+   \item Matlab, Simulink, Eagle, Cadence, LTSpice, Microsoft Excel, Unix/Linux, HBM Perception, \LaTeX{}
+}}
+
+%------------------------------------------------
+
+
+\entry
+{}
+{Programming}
+{}
+{
+\shortdot{
+   \item Fluent in C, Python
+   \item Dabbled in HTML, PHP, JavaScript, verilog, gdb, git, VBA, assembly
+}
+}
+
+%------------------------------------------------
+
+
+\entry
+{}
+{Other}
+{}
+{
+\shortdot{
+   \item Measurement uncertainty quantification, business letter writing, printed circuit board design, Arduino, soldering, metalwork, woodwork
+}
+}
+
+%------------------------------------------------
+
+
+
+
+
+\section{Part Time Employment}
+
+
+
+
+\entry
+{May 2014 -- Present}
+{Freelance Writer}
+{All About Circuits, The Sauce, Tharunka}
+{
+\shortdot{
+   \item Writes technical, satire, opinion and investigative articles
+   \item Wrote an article which was viewed 170,000 times. %{\href{http://www.thesauce.co}{www.thesauce.co}}
+}
+}
+
+%------------------------------------------------
+
+
+%\entry
+%{2012 -- Present}
+%{Flute and Piccolo Player}
+%{New South Wales Ambulance Band}
+%{
+%Text description
+%}
+
+%------------------------------------------------
+
+
+
+\entry
+{Dec 2012 -- Jan 2014}
+{Pyrotechnic Display Assistant}
+{Foti Fireworks}
+{
+\shortdot{
+   \item Set up Sydney Harbour New Year's Eve displays.
+}
+}
+
+%------------------------------------------------
+
+
+\entry
+{Feb 2009 -- Nov 2010}
+{Private Music Tutor}
+{Self Employed}
+{
+\shortdot{
+   \item Freelance flute teaching
+}
+}
+
+%------------------------------------------------
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+
+\begin{comment}
+\section{interests}
+
+
+
+
+\entry
+{}
+{Professional}
+{}
+{
+\shortdot{
+    \item Renewable energy integration, demand side management, programming, electronics
+}
+}
+
+\entry
+{}
+{Personal}
+{}
+{
+\shortdot{
+    \item Tae Kwon Do, unicycling, juggling, home-made electronics projects, flute%, piccolo
+}
+}
+
+
+\end{comment}
+
+%\begin{comment}
+%----------------------------------------------------------------------------------------
+%	References SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Professional Associations}
+
+\entry{2015 -- Present}{Professionals Australia {\normalfont (formerly APESMA)}}{}
+{\shortdot{\item Graduate member}}
+
+\section{References}
+
+
+
+
+
+
+%\begin{comment}
+
+\vspace{-\multicolsep}
+\vspace{\parskip}
+\begin{multicols}{2} % Begin the three-column layout
+
+\entry
+{}
+{Martin Mulcahy}
+{Ausgrid}{
+High Power Testing Manager
+%\faPhone{} 02 9424 3600 \\
+%\href{mailto:mmulcahy@ausgrid.com.au}{\faLaptop{} mmulcahy@ausgrid.com.au}
+}
+
+
+\begin{comment}
+\entry
+{}
+{Eliathamby Ambikairajah}
+{University of New South Wales - Head of Electrical Engineering}
+{
+\faPhone{} 02 9385 4009 \\
+\href{ambi@ee.unsw.edu.au}{\faLaptop{} ambi@ee.unsw.edu.au}
+}
+\end{comment}
+
+
+%\entry
+%{}
+%{Ben Hutton}
+%{UNSW Electrical Engineering Society}
+%{
+%President
+%%\faPhone{}  02 9853 5656 \\
+%%\href{emailto:benhutton@optusnet.com.au}{\faLaptop{} benhutton@optusnet.com.au}
+%}
+
+
+% Details required by IP Australia
+\entry
+{}
+{Matthew Rowe}
+{UNSW Electrical Engineering Society}{
+President
+%\faPhone{} 04 2191 4208 \\
+%\href{mailto:president@elsoc.net}{\faLaptop{} president@elsoc.net}
+}
+
+
+%\end{comment}
+\end{multicols}
+
+%\vspace{-1em}
+\vspace{-\multicolsep}
+\vspace{0.1cm}
+Contact information available upon request.
+
+
+
+
+%----------------------------------------------------------------------------------------
+%\end{comment}
+
+\end{document}
